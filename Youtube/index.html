@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" href="img/logo.png">
+		<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+		 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<title>Youtube</title>
+	</head>
+	<body ng-controller="control">
+		<div class="container-fluid">
+			<div class="row colorfn">
+				<div class="col-md-4 col-xs-4 col-sm-4">
+					<img src="img/nombre.png" class="img-responsive nombre">
+				</div>
+				<div class="col-md-8 col-xs-8 col-sm-8">
+					<img src="img/logo.png" class="img-responsive logo">
+				</div>
+			</div>
+			<!--buscador-->
+			<div class="row buscador">
+				<div class="col-md-12 col-xs-12 col-xs-12">
+					<div class="buscadora">
+						<form>
+							<input placeholder="              B u s c a      t u      v i d e o" class="input">
+							<label><button class="lupa"><i class="fas fa-search"></i></button></label>
+						</form>
+						<br><br>
+					</div>
+				</div>
+			</div>
+			<!--fila opciones de menu-->
+			<div class="row menu text-center">
+			<br><br> 
+				<div class="col-md-3 col-md-3 col-xs-3">
+					<div class=""><button class="p" ng-click="video1(x)">Musica</button></div>
+				</div>
+				<div class="col-md-3 col-md-3 col-xs-3">
+					<div class=""><button class="p" ng-click="video2()">Gameplay</button></div>
+				</div>
+				<div class="col-md-3 col-md-3 col-xs-3">
+					<div class=""><button class="p" ng-click="video3()">Entretenimiento</button></div>
+				</div>
+				<div class="col-md-3 col-md-3 col-xs-3">
+					<div class=""><button class="p" ng-click="video4()">Tutoriales</button></div>
+				</div>
+			</div>
+		</div>
+		<div ng-if="n == true">
+			<div class="container-fluid videocontainer">
+				<div class="row">
+					<div class="col-md-4 col-xs-4 col-sm-4">
+						<iframe src="https://www.youtube.com/embed/0QLFFNiP17Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-md-4 col-xs-4 col-sm-4">
+						<iframe src="https://www.youtube.com/embed/aJOTlE1K90k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-md-4 col-xs-4 col-sm-4">
+						<iframe src="https://www.youtube.com/embed/5Wiio4KoGe8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-xs-4 col-sm-4">
+						<iframe src="https://www.youtube.com/embed/5Wiio4KoGe8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-md-4 col-xs-4 col-sm-4">
+						<iframe src="https://www.youtube.com/embed/0QLFFNiP17Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-md-4 col-xs-4 col-sm-4">
+						<iframe src="https://www.youtube.com/embed/aJOTlE1K90k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+				<br><br><br><br>
+			</div>
+		</div>
+		<div class="container-fluid video">
+			<div class="row">
+				<div class="col-md-12 col-xs-12"></div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
