@@ -18,7 +18,7 @@
 					<img src="img/nombre.png" class="img-responsive nombre">
 				</div>
 				<div class="col-md-8 col-xs-8 col-sm-8">
-					<img src="img/logo.png" class="img-responsive logo">
+					<a><img src="img/logo.png" class="img-responsive logo"></a>
 				</div>
 			</div>
 			<!--buscador-->
@@ -37,16 +37,16 @@
 			<div class="row menu text-center">
 			<br><br> 
 				<div class="col-md-3 col-md-3 col-xs-3">
-					<div class=""><button class="p" ng-click="video1(x)">Musica</button></div>
+					<div class=""><button id="a1" class="p" ng-click="video1(1)">Musica</button></div>
 				</div>
 				<div class="col-md-3 col-md-3 col-xs-3">
-					<div class=""><button class="p" ng-click="video2()">Gameplay</button></div>
+					<div class=""><button id="a2" class="p" ng-click="video1(2)">Gameplay</button></div>
 				</div>
 				<div class="col-md-3 col-md-3 col-xs-3">
-					<div class=""><button class="p" ng-click="video3()">Entretenimiento</button></div>
+					<div class=""><button id="a3" class="p" ng-click="video1(3)">Entretenimiento</button></div>
 				</div>
 				<div class="col-md-3 col-md-3 col-xs-3">
-					<div class=""><button class="p" ng-click="video4()">Tutoriales</button></div>
+					<div class=""><button id="a4" class="p" ng-click="video1(4)">Tutoriales</button></div>
 				</div>
 			</div>
 		</div>
@@ -54,30 +54,142 @@
 			<div class="container-fluid videocontainer">
 				<div class="row">
 					<div class="col-md-4 col-xs-4 col-sm-4">
+						<br><br><br>
 						<iframe src="https://www.youtube.com/embed/0QLFFNiP17Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 					<div class="col-md-4 col-xs-4 col-sm-4">
+						<br><br><br>
 						<iframe src="https://www.youtube.com/embed/aJOTlE1K90k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 					<div class="col-md-4 col-xs-4 col-sm-4">
+						<br><br><br>
 						<iframe src="https://www.youtube.com/embed/5Wiio4KoGe8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-4 col-xs-4 col-sm-4">
+						<br>
 						<iframe src="https://www.youtube.com/embed/5Wiio4KoGe8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 					<div class="col-md-4 col-xs-4 col-sm-4">
+						<br>
 						<iframe src="https://www.youtube.com/embed/0QLFFNiP17Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 					<div class="col-md-4 col-xs-4 col-sm-4">
+						<br>
 						<iframe src="https://www.youtube.com/embed/aJOTlE1K90k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<br><br>
 					</div>
 				</div>
 				<br><br><br><br>
 			</div>
 		</div>
-		<div class="container-fluid video">
+		<!--fin video-->
+		<div ng-if="y == true">
+			<div class="container-fluid videoentre">
+				<div class="row">
+					<div class="col-md-4 col-xs-4 col-sm-4">
+						<br><br><br>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/5lcjfa3Z-nw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-md-4 col-xs-4 col-sm-4">
+						<br><br><br>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/oFblJ5NCH34" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-md-4 col-xs-4 col-sm-4">
+						<br><br><br>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/-dT8qTOtD1I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-xs-4 col-sm-4">
+						<br>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/paX6dQsxYi0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-md-4 col-xs-4 col-sm-4">
+						<br>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/3DGHlzADtBQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-md-4 col-xs-4 col-sm-4">
+						<br>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/BpWI0GzXgGc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<br><br>
+					</div>
+				</div>
+				<br><br><br><br>
+			</div>
+		</div>
+		<!--fin entretenimiento-->
+		<div ng-if="x== true">
+			<div class="container-fluid videocontainergame">
+				<div class="row">
+					<div class="col-md-4 col-xs-4 col-sm-4">
+						<br><br><br>	
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/4cRgsB1v8hc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-md-4 col-xs-4 col-sm-4">
+						<br><br><br>	
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/9tBClJLsfaQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-md-4 col-xs-4 col-sm-4">
+						<br><br><br>	
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/eF8W7HvL2f8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-xs-4 col-sm-4">
+						<br>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/SXtHhtj66DU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-md-4 col-xs-4 col-sm-4">
+						<br>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/z4OgDkFMMYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-md-4 col-xs-4 col-sm-4">
+						<br>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/nGqtvWiayxA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<br><br>
+					</div>
+				</div>
+				<br><br><br><br>
+			</div>
+		</div>
+		<!--fin gameplay-->
+		<div ng-if="x== true">
+			<div class="container-fluid videotut">
+				<div class="row">
+					<div class="col-md-4 col-xs-4 col-sm-4">
+						<br><br><br>	
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/4cRgsB1v8hc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-md-4 col-xs-4 col-sm-4">
+						<br><br><br>	
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/9tBClJLsfaQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-md-4 col-xs-4 col-sm-4">
+						<br><br><br>	
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/eF8W7HvL2f8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-xs-4 col-sm-4">
+						<br>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/SXtHhtj66DU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-md-4 col-xs-4 col-sm-4">
+						<br>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/z4OgDkFMMYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-md-4 col-xs-4 col-sm-4">
+						<br>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/nGqtvWiayxA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<br><br>
+					</div>
+				</div>
+				<br><br><br><br>
+			</div>
+		</div>
+		<div ng-model="m" ng-if="m==true" class="container-fluid video">
 			<div class="row">
 				<div class="col-md-12 col-xs-12"></div>
 			</div>

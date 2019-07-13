@@ -54,22 +54,54 @@
 	font-family: 'Fjalla One', sans-serif;
 }
 .p:hover{
-	background: #5e0606;
+	background: #ca3e47;
 	color: #FFF;
+	border-top-left-radius: 30px;
+	border-top-right-radius:30px; 
+}
+.ec{
+	background:#fff;
+	color: #AF2807 ;
+	border-top-left-radius: 30px;
+	border-top-right-radius:30px; 
+}
+.ec2{
+	background: url("https://pcindiemrace.files.wordpress.com/2017/07/20170714205639_1.jpg")no-repeat;
+	background-size: cover;
+	color: #fff ;
+	border-top-left-radius: 30px;
+	border-top-right-radius:30px; 
+}
+.ec3{
+	background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoqTzo07zqSwxnkwjrca0FZeEdJts1_RvSRdWvQ3P9UL6J6woo")no-repeat;
+	background-size: cover;
+	color: #fff ;
 	border-top-left-radius: 30px;
 	border-top-right-radius:30px; 
 }
 .video{
 	background: url("http://www.solofondos.com/wp-content/uploads/2015/12/Fondos-de-youtube.jpg")no-repeat;
 	background-size: cover;
-	height: 570px;
+	height: 590px;
 	opacity: 0.9 !important;
 }
 iframe{
-	opacity: 3 !important;
-	margin-left: 50px;
-	margin-top: 60px !important;
+	width: 100%;
+	height: 200px;
 }
 .videocontainer{
-	background: #5e0606;
+	background: #fff;
+}
+.videocontainergame{
+	background: url("https://pcindiemrace.files.wordpress.com/2017/07/20170714205639_1.jpg")no-repeat;
+	background-size: cover;
+	height: auto;
+}
+.videoentre{
+	background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoqTzo07zqSwxnkwjrca0FZeEdJts1_RvSRdWvQ3P9UL6J6woo")no-repeat;
+	background-size: cover;
+	height: auto;
+}
+.logob{
+	width: 50%;
 }
